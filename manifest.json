@@ -10,10 +10,15 @@
    "default_popup": "popup.html"
   },
   "permissions": [
+    "<all_urls>",
    "activeTab",
    "contextMenus",
    "tabs"
    ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://connect.facebook.net/en_US/sdk.js; object-src 'self'",
+   "icons": {
+       "64": "icon.png"
+   },
    "background": {
        "page": "background.html"
    }

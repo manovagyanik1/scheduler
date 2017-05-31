@@ -1,4 +1,11 @@
 
+// TODO: upload image as such instead of url 
+// read the latest time from database
+
+function getScheduledTime() {
+    var d = new Date();
+    return Math.round(d.getTime() / 1000) + 700;
+}
 
  var schedulePost = function(image){
      console.log(image.srcUrl);
@@ -9,12 +16,13 @@
     var baseDomain = "https://graph.facebook.com";
     var pageAccessToken = "EAAEw28ggKzcBAEQFUt6qvii3IDHEZA2G1WtMlDJEDEM11BqhbbwgOEz3hgAPwnGkZCZAuEquDVpdZB9f5Sk4xgAVeiv4RN9h2XFBNP5FniqvOjB3bId0Pt53eYbwM9aBm3GUQb5EJZCzfiEHAq3mGxZBP2OUJZCp380lPtO7mQdhgZDZD";
     var url = baseDomain+"/"+pageId+"/photos?access_token="+pageAccessToken;
+    var scheduledTime = getScheduledTime();
     var data = {
-        "message": "test post 4",
         "page_access_token": pageAccessToken,
         "url": image.srcUrl, 
+        "scheduled_publish_time": scheduledTime,
+        "published": false
     };
-    var urlSanitized = encodeURIComponent(url);
     $.ajax({
     type: "POST",
     url: url,
@@ -26,6 +34,6 @@
 
 chrome.contextMenus.create({
  title: "Schedule post",
- contexts:["all"],  // ContextType.. video context menu is somehow fucking up.. mostly because fb is overriding it
+ contexts:["image"],  // ContextType.. video context menu is somehow fucking up.. mostly because fb is overriding it
  onclick: schedulePost // A callback function
 });

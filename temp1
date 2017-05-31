@@ -1,0 +1,32 @@
+https://www.facebook.com/v2.9/dialog/oauth?app_id=335195490233143&client_id=335195490233143&display=popup&domain=www.merawater.in&locale=en_US&origin=1&redirect_uri=http://www.merawater.in&scope%3D%5B'publish_pages'%2C%20'publish_actions'%2C%20'user_managed_groups'%5D
+
+http://www.merawater.in/?code=AQCUgb36KLUr_myW5z7auSY9E_nutbdJdsggDTLZTaOcLPM4BKi9OHjDmwYk2sjOjqGO-VZC2eCg4Gj77VyNnVG5AveyinuZ_MkTtDILPow74ahQK6OfHOX8ycR9UorrYMeUOj26c8jw7IPDZAgb8QlM3TiJkMZF5ETddbuuGaU3r9bi2pUHYp475ClPILCEaaixAFZTcmsPT4JjYMbXpckMcS_50BbH-NpJJ-UE6xaNG-8OES53Q4xGpJBMJVMECyIjX5iq8yBS1NYRm_WUsH9QDpsEhEdTd7QahP4Wrw2fcLiB_RyZ7kqYOrZjvrZ2SppDNpzK-4dguU4wyICof4L3#_=_
+
+https://graph.facebook.com/v2.8/oauth/access_token?
+  client_id=335195490233143
+  &redirect_uri=http://www.merawater.in
+  &client_secret=a15dfa3968c29bf10d48cfc4cd9fab40
+  &code=AQCUgb36KLUr_myW5z7auSY9E_nutbdJdsggDTLZTaOcLPM4BKi9OHjDmwYk2sjOjqGO-VZC2eCg4Gj77VyNnVG5AveyinuZ_MkTtDILPow74ahQK6OfHOX8ycR9UorrYMeUOj26c8jw7IPDZAgb8QlM3TiJkMZF5ETddbuuGaU3r9bi2pUHYp475ClPILCEaaixAFZTcmsPT4JjYMbXpckMcS_50BbH-NpJJ-UE6xaNG-8OES53Q4xGpJBMJVMECyIjX5iq8yBS1NYRm_WUsH9QDpsEhEdTd7QahP4Wrw2fcLiB_RyZ7kqYOrZjvrZ2SppDNpzK-4dguU4wyICof4L3#_=_
+
+
+var success = function(){
+    console.log("successfully posted");
+    alert("done");
+}
+var pageId = 1884816475065657;
+var baseDomain = "https://graph.facebook.com";
+var pageAccessToken = "EAAEw28ggKzcBAEQFUt6qvii3IDHEZA2G1WtMlDJEDEM11BqhbbwgOEz3hgAPwnGkZCZAuEquDVpdZB9f5Sk4xgAVeiv4RN9h2XFBNP5FniqvOjB3bId0Pt53eYbwM9aBm3GUQb5EJZCzfiEHAq3mGxZBP2OUJZCp380lPtO7mQdhgZDZD";
+var url = baseDomain+"/"+pageId+"/photos?access_token="+pageAccessToken;
+var data = {
+    "message": "test post 3",
+    "page_access_token": pageAccessToken,
+    "url": "https://pbs.twimg.com/profile_images/786075012277174272/ugHTBrLi_400x400.jpg", 
+};
+var urlSanitized = encodeURIComponent(url);
+$.ajax({
+  type: "POST",
+  url: url,
+  data: data,
+  success: success,
+  dataType: "json"
+});

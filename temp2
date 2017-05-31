@@ -1,0 +1,127 @@
+user access token:
+
+EAAEw28ggKzcBAAABZBq37LOH55E297BsmLks4aMVk9ccZAHj9j1Ayx2YWxLdh4ZCSyllPVA53OnMwEZCMTOgo7ZAwUW0IBZAdbCU6ZAIZAtv8YNCFOLDofzJkH2WLXCEBl425YHC0DcNGTDs02zZBtElcb10EpJoiwfpe0nQmA0dhfndbVbEhBV7MRfw459Kdua8ZD
+
+
+clientid: 335195490233143
+client_secret: a15dfa3968c29bf10d48cfc4cd9fab40
+
+https://graph.facebook.com/v2.8/oauth/access_token?grant_type=fb_exchange_token&client_id=335195490233143&client_secret=a15dfa3968c29bf10d48cfc4cd9fab40&fb_exchange_token=EAAEw28ggKzcBAAABZBq37LOH55E297BsmLks4aMVk9ccZAHj9j1Ayx2YWxLdh4ZCSyllPVA53OnMwEZCMTOgo7ZAwUW0IBZAdbCU6ZAIZAtv8YNCFOLDofzJkH2WLXCEBl425YHC0DcNGTDs02zZBtElcb10EpJoiwfpe0nQmA0dhfndbVbEhBV7MRfw459Kdua8ZD
+
+short lived access token:
+{"access_token":"EAAEw28ggKzcBAESZC4Wb0EQjVsoV2akMnJ6iFpGqxQ7URhfhtKbf1Q41am3Qq6orY2q5rrZCYURPZBx9dB7ys5O1ZCzfXJ0eNApV3QxLPqR8tBnx0wkaAAsVT1LOnQdZB6D9gBqHGvDnZACgMC7tQJvuMkzjYiqsIZD","token_type":"bearer","expires_in":5177397}
+
+userid:
+https://graph.facebook.com/v2.8/me?access_token=EAAEw28ggKzcBAESZC4Wb0EQjVsoV2akMnJ6iFpGqxQ7URhfhtKbf1Q41am3Qq6orY2q5rrZCYURPZBx9dB7ys5O1ZCzfXJ0eNApV3QxLPqR8tBnx0wkaAAsVT1LOnQdZB6D9gBqHGvDnZACgMC7tQJvuMkzjYiqsIZD
+
+1416714748393911
+
+permanent access token:
+
+https://graph.facebook.com/v2.8/1416714748393911/accounts?access_token=EAAEw28ggKzcBAESZC4Wb0EQjVsoV2akMnJ6iFpGqxQ7URhfhtKbf1Q41am3Qq6orY2q5rrZCYURPZBx9dB7ys5O1ZCzfXJ0eNApV3QxLPqR8tBnx0wkaAAsVT1LOnQdZB6D9gBqHGvDnZACgMC7tQJvuMkzjYiqsIZD
+
+
+{
+   "data": [
+      {
+         "access_token": "EAAEw28ggKzcBAEQFUt6qvii3IDHEZA2G1WtMlDJEDEM11BqhbbwgOEz3hgAPwnGkZCZAuEquDVpdZB9f5Sk4xgAVeiv4RN9h2XFBNP5FniqvOjB3bId0Pt53eYbwM9aBm3GUQb5EJZCzfiEHAq3mGxZBP2OUJZCp380lPtO7mQdhgZDZD",
+         "category": "App Page",
+         "name": "Lolmenowtestcommunity",
+         "id": "1884816475065657",
+         "perms": [
+            "ADMINISTER",
+            "EDIT_PROFILE",
+            "CREATE_CONTENT",
+            "MODERATE_CONTENT",
+            "CREATE_ADS",
+            "BASIC_ADMIN"
+         ]
+      },
+      {
+         "access_token": "EAAEw28ggKzcBACdJBBZCsls5Xa2j3tl87WZCaOXruXgZAZBhAaj9qbXDoqTyEqjkiODsjw9RcCKQ2peXGR8ra5XAjvz1FRUgQcLMtV8vVbdWZCwOD6j8MZBOms90rUedoiSQmsA2cyrmY5ZCFymAzvtBzVdTphFGEYhFQ0fPktKWwZDZD",
+         "category": "App Page",
+         "name": "Lolmenow",
+         "id": "119554311935735",
+         "perms": [
+            "ADMINISTER",
+            "EDIT_PROFILE",
+            "CREATE_CONTENT",
+            "MODERATE_CONTENT",
+            "CREATE_ADS",
+            "BASIC_ADMIN"
+         ]
+      },
+      {
+         "access_token": "EAAEw28ggKzcBAKGm1YijbulUOl4xd7VI9wiZBvsZBJvu9I1eFlUKUOO4H120HZA1ZAetw7FVcfctvy7jjNzocoFC4epK7vZA91an3OlxesUZBV0idQ42RItzKO1uHepxee2ZCUlJGHi51OrRmB3ZAdWhlG40xZA6V5L7akBIwo2mh2QZDZD",
+         "category": "Internet Company",
+         "name": "Spate",
+         "id": "232483440562523",
+         "perms": [
+            "ADMINISTER",
+            "EDIT_PROFILE",
+            "CREATE_CONTENT",
+            "MODERATE_CONTENT",
+            "CREATE_ADS",
+            "BASIC_ADMIN"
+         ]
+      },
+      {
+         "access_token": "EAAEw28ggKzcBAKOzEnMD1fAJuwo7JqlGSRBCNjq6ZB1BycF08d4KZAQ3nZCawMCEYMh44W9ZBUKL5HCf3N0C1avA0hmA1bXt0hCl1ZBFBmCok90BrgOxc0qcahDGFGybdtbjXCOPfaSyykQbYKofzt7Y6CiZCaM9TqqM0dMyI7vAZDZD",
+         "category": "Community",
+         "name": "Wasted Tech Fridays",
+         "id": "1145974895445418",
+         "perms": [
+            "ADMINISTER",
+            "EDIT_PROFILE",
+            "CREATE_CONTENT",
+            "MODERATE_CONTENT",
+            "CREATE_ADS",
+            "BASIC_ADMIN"
+         ]
+      },
+      {
+         "access_token": "EAAEw28ggKzcBAE96YH74ptxBbKR2900yOU7eDkJe2SZC3jeGhNLzpNQTuOwG5kMvwflLHNBHZBPZAGAvtOAQMMMKIdno2fTh3ZAN81eoWB3ZB1nPiFZCxDPPB6TrPZADMVshlXNkvkIDboRpuReCo3y2B7L9bcS3bc9wwkwnoRULgZDZD",
+         "category": "Bottled Water Supplier",
+         "category_list": [
+            {
+               "id": "1731232890425134",
+               "name": "Bottled Water Supplier"
+            },
+            {
+               "id": "1716047138658843",
+               "name": "Water Treatment Service"
+            }
+         ],
+         "name": "MeraWater",
+         "id": "426149707535751",
+         "perms": [
+            "ADMINISTER",
+            "EDIT_PROFILE",
+            "CREATE_CONTENT",
+            "MODERATE_CONTENT",
+            "CREATE_ADS",
+            "BASIC_ADMIN"
+         ]
+      },
+      {
+         "access_token": "EAAEw28ggKzcBAOQwfOF0MhZCG8PuxoZAs2AEPsYXQS0EFv9i9fNDHOZAJtBDJQO9hBRMTH7DrFsvHHOZAPzQgYUjMUZCrVFbes5OIRl0J9nGa9VAnx2gceGfOIAECArVeiKmQ1vtjo4OpQQmun8ldsZCs9BSH4K5yytIlwhEZCikQZDZD",
+         "category": "Festival",
+         "name": "Test",
+         "id": "130922960795255",
+         "perms": [
+            "ADMINISTER",
+            "EDIT_PROFILE",
+            "CREATE_CONTENT",
+            "MODERATE_CONTENT",
+            "CREATE_ADS",
+            "BASIC_ADMIN"
+         ]
+      }
+   ],
+   "paging": {
+      "cursors": {
+         "before": "MTg4NDgxNjQ3NTA2NTY1NwZDZD",
+         "after": "MTMwOTIyOTYwNzk1MjU1"
+      }
+   }
+}

@@ -21,11 +21,25 @@
             function(prevTime) {
                 console.log(prevTime);
                 var nextTime = prevTime + interval;
-                // nextTime = getCorrectedTime(nextTime);
+                nextTime = getCorrectedTime(nextTime);
                 writeData(nextTime);
                 callback(nextTime);
             }
         );
+    }
+
+// 12:01 am to 6:00 am : we are not posting anything.
+    function getCorrectedTime(nextTime){
+        var d = new Date(nextTime*1000);
+        var m = d.getMinutes();
+        var h = d.getHours();
+        if(h<6) {
+            h = 6; m=0;
+        }
+        d.setHours(h);
+        d.setMinutes(m);
+        return Math.floor(d.getTime()/1000);
+
     }
 
   function readData(callback) {
@@ -47,6 +61,16 @@
      var success = function(){
         console.log("successfully posted");
     }
+    var error = function() {
+        readData(
+            function(prevTime) {
+                console.log(prevTime);
+                var nextTime = prevTime - interval;
+                nextTime = getCorrectedTime(nextTime);
+                writeData(nextTime);
+            }
+        );
+    }
     var pageId = 1884816475065657;
     var baseDomain = "https://graph.facebook.com";
     var pageAccessToken = "EAAEw28ggKzcBAEQFUt6qvii3IDHEZA2G1WtMlDJEDEM11BqhbbwgOEz3hgAPwnGkZCZAuEquDVpdZB9f5Sk4xgAVeiv4RN9h2XFBNP5FniqvOjB3bId0Pt53eYbwM9aBm3GUQb5EJZCzfiEHAq3mGxZBP2OUJZCp380lPtO7mQdhgZDZD";
@@ -63,6 +87,7 @@
         url: url,
         data: data,
         success: success,
+        error: error,
         dataType: "json"
     });
     });

@@ -38,6 +38,11 @@
         }
         d.setHours(h);
         d.setMinutes(m);
+
+        // set d as the current date + 30 minutes in case current Time is greater than write time
+        if(d.getTime() < Date.now()){
+            d = new Date(Date.now() + interval*1000);
+        }
         return Math.floor(d.getTime()/1000);
 
     }

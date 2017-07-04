@@ -15,7 +15,7 @@
    "contextMenus",
    "tabs"
    ],
-   "content_security_policy": "script-src 'self' 'unsafe-eval' https://s-usc1c-nss-130.firebaseio.com/ https://schedule-c07db.firebaseio.com https://connect.facebook.net/en_US/sdk.js; object-src 'self'",
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://s-usc1c-nss-111.firebaseio.com/ https://s-usc1c-nss-130.firebaseio.com/ https://schedule-c07db.firebaseio.com https://connect.facebook.net/en_US/sdk.js; object-src 'self'",
    "icons": {
        "64": "icon.png"
    },

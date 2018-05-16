@@ -80,7 +80,7 @@
     var pageId = 119554311935735; // prod
     var baseDomain = "https://graph.facebook.com";
     // var pageAccessToken = "EAAEw28ggKzcBAEQFUt6qvii3IDHEZA2G1WtMlDJEDEM11BqhbbwgOEz3hgAPwnGkZCZAuEquDVpdZB9f5Sk4xgAVeiv4RN9h2XFBNP5FniqvOjB3bId0Pt53eYbwM9aBm3GUQb5EJZCzfiEHAq3mGxZBP2OUJZCp380lPtO7mQdhgZDZD";
-    var pageAccessToken = "EAAEw28ggKzcBACdJBBZCsls5Xa2j3tl87WZCaOXruXgZAZBhAaj9qbXDoqTyEqjkiODsjw9RcCKQ2peXGR8ra5XAjvz1FRUgQcLMtV8vVbdWZCwOD6j8MZBOms90rUedoiSQmsA2cyrmY5ZCFymAzvtBzVdTphFGEYhFQ0fPktKWwZDZD"; // prod
+    var pageAccessToken = "EAAEw28ggKzcBAIZAQ5p9nwBs5i4mvOTwlJIFrZCkJMZBaaz0GpHakoS7RiyInjGfZBdkVxZBdeNa016JWoJloxZA7fnXtmZBQhAZBgGl3c1Y3N2rtozBIxzdfJgGXUMIqVM552fXRDRDSrZBuJSqPwTVXP0eadSJQZBZCyaQ9ZBFueq9xQZDZD"; // prod
     var url = baseDomain+"/"+pageId+"/photos?access_token="+pageAccessToken;
     getScheduledTime(function(scheduledTime){
         var data = {

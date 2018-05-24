@@ -31,20 +31,19 @@
 // 12:01 am to 6:00 am : we are not posting anything.
     function getCorrectedTime(nextTime){
         var d = new Date(nextTime*1000);
-        var m = d.getMinutes();
-        var h = d.getHours();
-        if(h<6) {
-            h = 6; m=0;
-        }
-        d.setHours(h);
-        d.setMinutes(m);
+        // var m = d.getMinutes();
+        // var h = d.getHours();
+        // if(h<6) {
+        //     h = 6; m=0;
+        // }
+        // d.setHours(h);
+        // d.setMinutes(m);
 
         // set d as the current date + 30 minutes in case current Time is greater than write time
         if(d.getTime() < Date.now()){
             d = new Date(Date.now() + interval*1000);
         }
         return Math.floor(d.getTime()/1000);
-
     }
 
   function readData(callback) {
@@ -80,7 +79,7 @@
     var pageId = 119554311935735; // prod
     var baseDomain = "https://graph.facebook.com";
     // var pageAccessToken = "EAAEw28ggKzcBAEQFUt6qvii3IDHEZA2G1WtMlDJEDEM11BqhbbwgOEz3hgAPwnGkZCZAuEquDVpdZB9f5Sk4xgAVeiv4RN9h2XFBNP5FniqvOjB3bId0Pt53eYbwM9aBm3GUQb5EJZCzfiEHAq3mGxZBP2OUJZCp380lPtO7mQdhgZDZD";
-    var pageAccessToken = "EAAEw28ggKzcBAIZAQ5p9nwBs5i4mvOTwlJIFrZCkJMZBaaz0GpHakoS7RiyInjGfZBdkVxZBdeNa016JWoJloxZA7fnXtmZBQhAZBgGl3c1Y3N2rtozBIxzdfJgGXUMIqVM552fXRDRDSrZBuJSqPwTVXP0eadSJQZBZCyaQ9ZBFueq9xQZDZD"; // prod
+    var pageAccessToken = "EAACEdEose0cBAMKVky2Tz3zUwXTAvStPc30zMQxf8VlUD57RY2yCBgrM3BWWhhbDI0T1FvJVwk5oP7lN1vxnZBvb9nMPOEljgObfKhArCTmSDoGgYOZCqv4bZCyiIqUjSYyqvixhntE9pyzCIGG4mkisSj4rTHZB8bGILjFhOXb4sOOSsRX9Mx7LBNttY61rFZCMB3UC7f2VsAjymGMr4"; // prod
     var url = baseDomain+"/"+pageId+"/photos?access_token="+pageAccessToken;
     getScheduledTime(function(scheduledTime){
         var data = {

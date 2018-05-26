@@ -14,7 +14,7 @@
   };
   firebase.initializeApp(config);
     var database = firebase.database();
-    var interval = 30*60;
+    var interval = 60*60;
 
     function getScheduledTime(callback) {
        readData(

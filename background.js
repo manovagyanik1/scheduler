@@ -104,3 +104,12 @@ chrome.contextMenus.create({
  contexts:["image"],  // ContextType.. video context menu is somehow fucking up.. mostly because fb is overriding it
  onclick: schedulePost // A callback function
 });
+
+
+// tokens
+// amazing facts
+// EAAEw28ggKzcBAHn2GWIEfSPQUjiZCwbFDrBZCGHqzr4gZCzZAciTpf0JnIRb9ayIAtL4mSKFYnpXZBkgfAZA9agZCpS5HOWqM8nBZB7hrmobfYD0vELfhxzmBIZCS4OyzSESBmOjEqaoZCZBltdzu99gZCulKv7fFR1CCaQZCAukeiutCtZCt1ZC7CgG9N2wDp7geOG9X4ZD
+
+
+// our business
+// EAAEw28ggKzcBAAqHvLWZA7KsAPncSQCQsEPAxZBue6mpJ4myrBChXGm1eZBNM0c0ZAIAKEPj8OpQQKWr6ZCPlp59bIcURK2agOl7ZCnz3x6QXvMudeitBcxV3AN3eZBb4GN3l2TZCgA6E3x72ZCVX4pMPhhK0DYPNar8rmyIJm9ZCIqdJ7iy7AaQml3ZBJn9CMZAxZCcZD

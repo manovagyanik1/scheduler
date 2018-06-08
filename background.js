@@ -31,13 +31,13 @@
 // 12:01 am to 6:00 am : we are not posting anything.
     function getCorrectedTime(nextTime){
         var d = new Date(nextTime*1000);
-        // var m = d.getMinutes();
-        // var h = d.getHours();
-        // if(h<6) {
-        //     h = 6; m=0;
-        // }
-        // d.setHours(h);
-        // d.setMinutes(m);
+        var m = d.getMinutes();
+        var h = d.getHours();
+        if(h<6) {
+            h = 6; m=0;
+        }
+        d.setHours(h);
+        d.setMinutes(m);
 
         // set d as the current date + 30 minutes in case current Time is greater than write time
         if(d.getTime() < Date.now()){
@@ -104,6 +104,12 @@ chrome.contextMenus.create({
  contexts:["image"],  // ContextType.. video context menu is somehow fucking up.. mostly because fb is overriding it
  onclick: schedulePost // A callback function
 });
+
+// chrome.contextMenus.create({
+//     title: "Schedule post to amaze",
+//     contexts:["image"],  // ContextType.. video context menu is somehow fucking up.. mostly because fb is overriding it
+//     onclick: schedulePost // A callback function
+//    });
 
 
 // tokens
